@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3853,7 +3853,7 @@ MonoBehaviour:
   - {fileID: 308315026}
   - {fileID: 1805481801}
   gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  storedSectionLength: 3.0270705
+  storedSectionLength: 3.02707
   sectionPercentOfWhole: 0
 --- !u!4 &324120783
 Transform:
@@ -9065,7 +9065,7 @@ MonoBehaviour:
   - {fileID: 612874516}
   - {fileID: 1847898571}
   gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  storedSectionLength: 6.2428055
+  storedSectionLength: 6.2428064
   sectionPercentOfWhole: 0
 --- !u!4 &820939945
 Transform:
@@ -26129,7 +26129,7 @@ MonoBehaviour:
   - {fileID: 1374474990}
   - {fileID: 613211272}
   gizmoColor: {r: 1, g: 1, b: 1, a: 1}
-  storedSectionLength: 6.4301887
+  storedSectionLength: 6.430188
   sectionPercentOfWhole: 0
 --- !u!4 &1942147210
 Transform:
