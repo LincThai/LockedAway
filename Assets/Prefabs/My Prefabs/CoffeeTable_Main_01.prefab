@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2208172348852240643
+--- !u!1 &2682860258974846177
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1580431012207123385}
-  - component: {fileID: 2468265291722970140}
-  - component: {fileID: 407010056782094550}
+  - component: {fileID: 3346385201826960987}
+  - component: {fileID: 1864318761420069374}
+  - component: {fileID: 4484339760698682676}
   m_Layer: 0
-  m_Name: Birdcage_Wall_Front_01
+  m_Name: CoffeeTable_Main_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1580431012207123385
+--- !u!4 &3346385201826960987
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208172348852240643}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2, y: 4, z: -6}
+  m_GameObject: {fileID: 2682860258974846177}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!33 &2468265291722970140
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1864318761420069374
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208172348852240643}
-  m_Mesh: {fileID: 614933655635722846, guid: 5555e648e1617c448be71d61e89e415e, type: 3}
---- !u!23 &407010056782094550
+  m_GameObject: {fileID: 2682860258974846177}
+  m_Mesh: {fileID: 7362710354568040249, guid: 111e090f541528141b1c0aa45e48478f, type: 3}
+--- !u!23 &4484339760698682676
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2208172348852240643}
+  m_GameObject: {fileID: 2682860258974846177}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 5555e648e1617c448be71d61e89e415e, type: 3}
+  - {fileID: 5561349426305759274, guid: 111e090f541528141b1c0aa45e48478f, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
