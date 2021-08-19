@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5732683039768962484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6773747322510680495}
@@ -77,7 +77,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
@@ -93,11 +93,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff3dbaec4c47b3a47b161463c9e359cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 5
-  jumpForce: 0
-  groundCheck: {fileID: 0}
-  isGrounded: 0
+  speed: 5
+  jumpForce: 250
+  groundCheck: {fileID: 8934979915144027171}
+  isGrounded: 1
   canJump: 0
+  canFly: 0
 --- !u!136 &8008476653042594182
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -108,8 +109,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 1
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6773747323077688026
@@ -155,6 +156,7 @@ GameObject:
   - component: {fileID: 6773747324010188095}
   - component: {fileID: 6773747324010188092}
   - component: {fileID: 6773747324010188093}
+  - component: {fileID: 1499835285}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -258,3 +260,16 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1499835285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6773747324010188083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489a057d585ffbd429b868d57cd21319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensitivity: 2
