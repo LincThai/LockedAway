@@ -65,7 +65,7 @@ public class Player_controller : MonoBehaviour
             //DoCrouch();
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && isCrouch)
+        if (Input.GetKeyDown(KeyCode.W) && !isCrouch)
         {
             speed = runSpeed;
         }
@@ -107,7 +107,7 @@ public class Player_controller : MonoBehaviour
         }
         else
         {
-            capCollider.height - +1f;
+            capCollider.height -= 1f;
         }
         isCrouch = !isCrouch;
     }

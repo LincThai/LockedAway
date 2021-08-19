@@ -7,13 +7,8 @@ public class FPS_Camera : MonoBehaviour
     //Set Variables
     Vector2 mouseLook;
     public float sensitivity;
-    GameObject character;
+    public GameObject character;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        character = this.transform.parent.gameObject;
-    }
 
     // Update is called once per frame
     void Update()

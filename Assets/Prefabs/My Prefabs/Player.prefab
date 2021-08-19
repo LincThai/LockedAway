@@ -93,12 +93,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff3dbaec4c47b3a47b161463c9e359cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  walkSpeed: 5
+  runSpeed: 10
+  crouchSpeed: 2.5
   jumpForce: 250
   groundCheck: {fileID: 8934979915144027171}
   isGrounded: 1
   canJump: 0
   canFly: 0
+  isCrouch: 0
 --- !u!136 &8008476653042594182
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -273,3 +276,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 2
+  character: {fileID: 6773747322510680493}
