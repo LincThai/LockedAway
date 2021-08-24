@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94716c41dacd7a340b9c94a4d2043197
+guid: f2dcbf14324d47a499783221451475c6
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
@@ -386,7 +386,7 @@ ModelImporter:
     second: Robin
   - first:
       74: 7400000
-    second: flyRight
+    second: flyStraight
   - first:
       95: 9500000
     second: //RootNode
@@ -422,11 +422,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: flyRight
+      name: flyStraight
       takeName: Take 001
       internalID: 0
       firstFrame: 0
-      lastFrame: 31
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
