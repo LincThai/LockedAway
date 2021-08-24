@@ -17,17 +17,24 @@ public class Player_controller : MonoBehaviour
 
 
     public Transform groundCheck;
+    public Transform roofCheck;
 
     CapsuleCollider capCollider;
 
-    // a bool for telling if the player is grounded
+    // a bool to check if the player is grounded
     public bool isGrounded;
+    // a bool to check if the player hits the roof
+    public bool isTouchRoof;
     // if player can jump
     public bool canJump;
     // if the player can fly
     public bool canFly;
     // when player is crouching
     public bool isCrouch;
+
+    //inventory bools
+    public bool hasKey;
+    public bool hasRope;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +61,18 @@ public class Player_controller : MonoBehaviour
         // creates a sphere and when that speere hits something it will return isGrounded=true
         isGrounded = Physics.CheckSphere(groundCheck.transform.position, 0.1f);
 
+        isTouchRoof = Physics.CheckSphere(roofCheck.transform.position, 0.1f);
+
+        //
+        if (canFly)
+        {
+            if (isTouchRoof)
+                {
+                    transform.position -= transform.up * 1f;
+                }
+        }
+       
+        
         //
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
