@@ -79,17 +79,17 @@ public class Player_controller : MonoBehaviour
             canJump = !canJump;
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             //DoCrouch();
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && !isCrouch)
+        if (Input.GetKeyDown(KeyCode.R) && !isCrouch)
         {
             speed = runSpeed;
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             speed = walkSpeed;
         }
