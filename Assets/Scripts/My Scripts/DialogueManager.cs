@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    // animation variable
+    public Animator animator;
 
     // Text variables for ui elements
     public Text nameText;
@@ -22,6 +24,10 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        // play open animation
+        animator.SetBool("isOpen", true);
+        
+
         //Debug.Log("starting conversation with" + dialogue.name);
         nameText.text = dialogue.name;
 
@@ -50,14 +56,35 @@ public class DialogueManager : MonoBehaviour
 
         // gets next sentence in queue
         string sentence = sentences.Dequeue();
+
         //Debug.Log(sentence);
-        dialogueText.text = sentence;
+        //dialogueText.text = sentence;
+
+        // stops all coroutines
+        StopAllCoroutines();
+
+        // starts the typing
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    // makes letters appear one at a time for dialogue
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        // ToCharArray converts string into character array
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     // ends the dialogue
     public void EndDialogue()
     {
-        Debug.Log("End of conversation");
+        //Debug.Log("End of conversation");
+        // play close animation
+        animator.SetBool("isOpen", false);
     }
 
 }
