@@ -1046,6 +1046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 274069017}
+  - component: {fileID: 274069018}
   m_Layer: 5
   m_Name: EndUI
   m_TagString: Untagged
@@ -1074,6 +1075,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &274069018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274069016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5598457b07505f14db3f559bb71c0066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &303500455 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6611794536646760203, guid: 915058abb51084e41b1ffdd63c9495cd, type: 3}
@@ -1375,13 +1388,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 439987443}
+  - component: {fileID: 439987444}
   m_Layer: 5
   m_Name: GameUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &439987443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1402,6 +1416,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &439987444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439987442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21dda809457ab8c40ad85b36e7d6c414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &456823643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,6 +2283,11 @@ MonoBehaviour:
   dialogue:
     name: 
     sentences:
+    - Oh! how I wish I could fly around like that.
+    - How to get out of the cage we need the key and some rope.
+    - Press E and get one step closer to freedom.
+    - I am falling I need to fly. Press Q to enter flight mode. Press Z to ascend
+      and X to descend. (Remember you can't land while in flight mode)
     - 
     - 
     - 
@@ -4971,6 +5002,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4a0fbed985686f429cb359990b4968a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: 0
+  startUI: {fileID: 1782473897}
+  gameUI: {fileID: 439987442}
+  endUI: {fileID: 274069016}
 --- !u!4 &1520627357
 Transform:
   m_ObjectHideFlags: 0
@@ -6033,6 +6068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1782473898}
+  - component: {fileID: 1782473899}
   m_Layer: 5
   m_Name: StartUI
   m_TagString: Untagged
@@ -6062,6 +6098,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1782473899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782473897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debece5202d33ab4c982d6c1a4c6d1cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1787767461
 GameObject:
   m_ObjectHideFlags: 0
