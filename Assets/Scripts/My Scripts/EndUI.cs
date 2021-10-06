@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class EndUI : MonoBehaviour
 {
+    GameManager GM;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GM = GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickButton(int buttonClicked)
     {
-        
+        if (buttonClicked == 1)
+        {
+            GM.gameState = GameState.preGame;
+        }
     }
 }

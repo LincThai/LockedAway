@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StartUI : MonoBehaviour
 {
@@ -12,13 +13,10 @@ public class StartUI : MonoBehaviour
     void Start()
     {
         // call game manager from the game manager game object
-        GM = GameObject.FindGameObjectOfType<GameManager>().GetComponent<GameManager>();
+        GM = GameObject.FindObjectOfType<GameManager>().GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        public void OnClickButton(int buttonClicked)
+    public void OnClickButton(int buttonClicked)
         {
             if (buttonClicked == 1)
             {
@@ -29,5 +27,4 @@ public class StartUI : MonoBehaviour
                 Application.Quit();
             }
         }
-    }
 }
